@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-tac-Toe</title>
+    <link rel="stylesheet" href="sass/styles.css" />
+    <!-- <link rel="stylesheet" href="tic-tac-toe.css" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <video autoplay muted loop id="myVideo">
+        <source src="/video/bgvideo.mp4" type="video/mp4" />
+      </video>
+      <h1><i>Tic-Tac-Toe</i></h1>
+      <div id="btnRef">
+        <div style="display: flex">
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+        <div style="display: flex">
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+        <div style="display: flex">
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+      </div>
+      <br />
+      <button onclick="window.location.reload()" class="restart">
+        RESTART
+      </button>
+
+      <div class="popup hide">
+        <video autoplay muted loop id="myVideo">
+          <source src="/video/winningvideo.mp4" type="video/mp4" />
+        </video>
+        <p id="greet">rtyui</p>
+        <div id="msg"><span id="winner"></span></div>
+        <br />
+        <button
+          type="button"
+          class="restart"
+          onclick="window.location.reload()"
+        >
+          NewGame
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

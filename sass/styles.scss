@@ -1,0 +1,63 @@
+@import "mixin";
+@import "var";
+
+* {
+  @include applytoall;
+}
+#myVideo {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container {
+  @include commoncode;
+  @include flexprob;
+  position: relative;
+}
+h1 {
+  padding: 1rem;
+}
+.btn {
+  width: 8.5rem;
+  height: 8.5rem;
+  background-color: $boxbg;
+  color: $textcolor;
+  font-size: 2rem;
+  border: none;
+  margin: 0.1rem;
+  cursor: pointer;
+}
+.restart {
+  padding: 0.4rem 1rem;
+  background-color: $restart;
+  border: 0;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.popup {
+  z-index: 2;
+  @include commoncode;
+  position: absolute;
+  font-size: 2rem;
+  @include flexprob;
+}
+#greet,
+span {
+  color: $greeting;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 80%;
+  }
+}
